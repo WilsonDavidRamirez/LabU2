@@ -11,6 +11,9 @@
     "migration:undo": "sequelize-cli db:migrate:undo",
     "migration:delete": "sequelize-cli db:migrate:undo:all"
   },
+  "engines": {
+  "node": "18.x"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
