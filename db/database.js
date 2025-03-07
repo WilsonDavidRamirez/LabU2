@@ -7,9 +7,21 @@ module.exports = {
   development: {
     url: URI,
     dialect: 'postgres',
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false, // Para Railway
+      },
+    },
   },
   production: {
     url: URI,
     dialect: 'postgres',
-  }
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      },
+    },
+  },
 };
